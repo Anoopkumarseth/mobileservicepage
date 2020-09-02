@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <button onclick="MenuToggle()" class="toggle"><img src="img/icon/menu.svg" alt=""></button>
+        <ul id="MenuToggle">
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Replair</a></li>
+            <li><a href="#">Recycle</a></li>
+            <li><a href="#">Buy Phone</a></li>
+            <li><a href="#">Find New Phone<span class="icon"><img src="img/icon/arrow.svg" alt=""></span></a></li>
+            <li><a href="#">By Accesories <span class="icon"><img src="img/icon/arrow.svg" alt=""></span></a></li>
+            <li><a href="#">More <span class="icon"><img src="img/icon/arrow.svg" alt=""></span></a></li>
+        </ul>
+    </nav>
+    <section class="header">
+        <div class="headerImg"></div>
+        <div class="container headBox">
+            <h2 class="d-flex jCon_center">What would you like to do?</h2>
+            <div class="servicesIcons">
+                <div class="icon">
+                    <img src="img/sell.png">
+                    <div class="text">Sell Phone</div>
+                </div>
+                <div class="icon">
+                    <img src="img/repair.png">
+                    <div class="text">Repair Phone</div>
+                </div>
+                <div class="icon">
+                    <img src="img/recycle.png">
+                    <div class="text">Recycle Phone</div>
+                </div>
+                <div class="icon">
+                    <img src="img/buy.png">
+                    <div class="text">Buy Phone</div>
+                </div>
+                <div class="icon">
+                    <img src="img/watch.png">
+                    <div class="text">Sell Smart Watch</div>
+                </div>
+                <div class="icon">
+                    <img src="img/laptop.png">
+                    <div class="text">Sell Laptop</div>
+                </div>
+                <div class="flex-break"></div>
+                <div class="icon">
+                    <img src="img/tablet.png">
+                    <div class="text">Sell Tablet</div>
+                </div>
+
+                <div class="icon">
+                    <img src="img/desktop.png">
+                    <div class="text">Sell Desktop</div>
+                </div>
+                <div class="icon">
+                    <img src="img/game.png">
+                    <div class="text">Sell Gaming Consoles</div>
+                </div>
+                <div class="icon">
+                    <img src="img/find.png">
+                    <div class="text">Find New Phone</div>
+                </div>
+                <div class="icon">
+                    <img src="img/accessories.png">
+                    <div class="text">Buy Accessories</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cardsView">
+        <div class="row">
+            <div class="col">
+                <div class="card d-flex  col-flex aling-center">
+                    <img src="img/sell_phone.png" alt="Sell phone">
+                    <h3><span>1</span>Check Price</h3>
+                    <p>Select Your Device And Tell us about it's current</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card d-flex  col-flex aling-center">
+                    <img src="img/scooter.png" alt="Sell phone">
+                    <h3><span>2</span>Check Price</h3>
+                    <p>Select Your Device And Tell us about it's current</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card d-flex  col-flex aling-center">
+                    <img src="img/money.png" alt="Sell phone">
+                    <h3><span>2</span>Get Paid</h3>
+                    <p>Select Your Device And Tell us about it's current</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function MenuToggle(){
+            var menuBox = document.getElementById("MenuToggle");
+
+            if (menuBox.classList) {
+                menuBox.classList.toggle("showMenu");
+            } else {
+                // 
+                var classes = menuBox.className.split(" ");
+                var i = classes.indexOf("showMenu");
+
+                if (i >= 0)
+                    classes.splice(i, 1);
+                else
+                    classes.push("showMenu");
+                menuBox.className = classes.join(" ");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
