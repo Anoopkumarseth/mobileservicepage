@@ -162,6 +162,7 @@
   cursor: pointer;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
+  border-radius: 15px;
 }
 
 .servicesIcons .icon:hover {

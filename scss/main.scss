@@ -114,6 +114,7 @@ $shadow: 0 0 10px rgba(0, 0, 0, 0.15);
         width: 7rem;
         cursor: pointer;
         transition: all ease 0.5s;
+        border-radius: 15px;
         &:hover{
             box-shadow: $shadow inset;
             transform: scale(1.1);
